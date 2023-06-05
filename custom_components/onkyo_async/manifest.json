@@ -1,5 +1,5 @@
 {
-  "domain": "onkyo",
+  "domain": "onkyo_async",
   "name": "Onkyo",
   "version": "0.0.1",
   "documentation": "https://github.com/foxy82/hacs-onkyo-repository#readme",
