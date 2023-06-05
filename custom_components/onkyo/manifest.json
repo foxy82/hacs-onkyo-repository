@@ -2,7 +2,7 @@
   "domain": "onkyo",
   "name": "Onkyo",
   "version": "0.0.1",
-  "documentation": "https://www.home-assistant.io/integrations/onkyo",
+  "documentation": "https://github.com/foxy82/hacs-onkyo-repository#readme",
   "issue_tracker": "https://github.com/foxy82/hacs-onkyo-repository/issues"
   "requirements": ["pyeiscp==0.0.4"],
   "codeowners": ["@winterscar", "@klaashoekstra94", "@OnFreund"]

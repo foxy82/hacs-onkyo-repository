@@ -19,10 +19,10 @@ as it stands the Home Assistant team say this PR is too big and so it is stuck i
 
 This repo is based off the original PR and as such doesn't include the UI configurable element. 
 
-To configure you need to use yaml like so:
+To configure you need to use yaml just like the Home Assistant component.
 
 The major change from the official integration is that `max_volume` and `receiver_max_volume` have been combined into
-a single setting. 
+a single setting. You can find the official components documentation here: https://www.home-assistant.io/integrations/onkyo/
 
 ```
   - platform: onkyo
