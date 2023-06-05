@@ -21,17 +21,26 @@ This repo is based off the original PR and as such doesn't include the UI config
 
 To configure you need to use yaml just like the Home Assistant component.
 
+If you are using the Official Onkyo component I suggest you comment out your config (use `#` on each line). 
+Restart home assistant. 
+Then add this custom component. 
+Restart Home Assistant. 
+Add config for this component. 
+Restart Home Assistant
+
+
 You can find the official components documentation here: https://www.home-assistant.io/integrations/onkyo/
 
 The major change from the official integration is:
-
+* platform is called `onkyo_async` to avoid clashing with the official repo.
 * `max_volume` and `receiver_max_volume` have been combined into a single setting. 
-* `zones` can now be added with a `name` and `max_volume` see example below
+* `zones` can now be added with a `name` and `max_volume` see example below.
 
 ```
-  - platform: onkyo
+  - platform: onkyo_async
     host: 192.168.1.40
     name: Studio Amplifier
+    # Only required if you want to rename sources.
     sources:
       strm-box: "Satalite box"
       video2: "Matrix"
