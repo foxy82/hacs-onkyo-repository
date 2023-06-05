@@ -21,8 +21,12 @@ This repo is based off the original PR and as such doesn't include the UI config
 
 To configure you need to use yaml just like the Home Assistant component.
 
-The major change from the official integration is that `max_volume` and `receiver_max_volume` have been combined into
-a single setting. You can find the official components documentation here: https://www.home-assistant.io/integrations/onkyo/
+You can find the official components documentation here: https://www.home-assistant.io/integrations/onkyo/
+
+The major change from the official integration is:
+
+* `max_volume` and `receiver_max_volume` have been combined into a single setting. 
+* `zones` can now be added with a `name` and `max_volume` see example below
 
 ```
   - platform: onkyo
@@ -31,7 +35,7 @@ a single setting. You can find the official components documentation here: https
     sources:
       strm-box: "Satalite box"
       video2: "Matrix"
-      # dvd: "DVD"
+      dvd: "DVD"
       game: "Computer"
       cd: "Snapcast"
       aux1: "AUX"
@@ -45,11 +49,9 @@ a single setting. You can find the official components documentation here: https
     max_volume: 150
     zones:
       zone2:
-        # Both defined
         name: Back Garden Zone
         max_volume: 150
-      # Not connected at the moment
-      #zone3:
-      #  name: Courtyard Zone
-      #  max_volume: 150
+      zone3:
+        name: Courtyard Zone
+        max_volume: 150
 ```
